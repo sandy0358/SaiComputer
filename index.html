@@ -1,0 +1,1441 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sai Computer, Kurhe | CSC Center & Digital Seva</title>
+
+<meta name="description"
+content="Sai Computer, Kurhe - CSC Center, Online Government Forms, Digital Services, Job Forms, Scholarship and Online Application Assistance.">
+
+<style>
+:root{
+    --blue:#082b59;
+    --blue2:#1267ad;
+    --green:#16a66a;
+    --light:#f4f8fc;
+    --dark:#142033;
+    --gray:#667085;
+    --white:#ffffff;
+    --shadow:0 12px 35px rgba(8,43,89,.12);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial,"Noto Sans Devanagari",sans-serif;
+    color:var(--dark);
+    line-height:1.6;
+    background:#fff;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+.container{
+    width:min(1120px,92%);
+    margin:auto;
+}
+
+/* TOP BAR */
+
+.topbar{
+    background:var(--blue);
+    color:white;
+    font-size:14px;
+}
+
+.topbar .container{
+    display:flex;
+    justify-content:space-between;
+    padding:8px 0;
+}
+
+/* HEADER */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:#fff;
+    box-shadow:0 4px 20px rgba(0,0,0,.08);
+}
+
+.nav{
+    min-height:76px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo-icon{
+    width:48px;
+    height:48px;
+    border-radius:12px;
+    display:grid;
+    place-items:center;
+    color:#fff;
+    font-size:25px;
+    font-weight:bold;
+    background:linear-gradient(135deg,var(--blue),var(--blue2));
+}
+
+.logo h2{
+    color:var(--blue);
+    font-size:20px;
+}
+
+.logo small{
+    color:var(--gray);
+    font-size:11px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    font-weight:600;
+}
+
+nav a:hover{
+    color:var(--blue2);
+}
+
+.menu{
+    display:none;
+    background:none;
+    border:0;
+    font-size:28px;
+}
+
+/* HERO */
+
+.hero{
+    color:white;
+    padding:85px 0;
+    background:
+    linear-gradient(135deg,rgba(4,27,56,.97),rgba(18,103,173,.92));
+}
+
+.hero-grid{
+    display:grid;
+    grid-template-columns:1.2fr .8fr;
+    gap:45px;
+    align-items:center;
+}
+
+.badge{
+    display:inline-block;
+    padding:7px 14px;
+    border-radius:30px;
+    background:rgba(255,255,255,.14);
+    border:1px solid rgba(255,255,255,.25);
+    font-size:14px;
+    margin-bottom:18px;
+}
+
+.hero h1{
+    font-size:clamp(38px,6vw,62px);
+    line-height:1.1;
+    margin-bottom:20px;
+}
+
+.hero h1 span{
+    color:#8ee6c0;
+}
+
+.hero p{
+    font-size:18px;
+    color:#e4eef8;
+    max-width:680px;
+}
+
+.buttons{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+    margin-top:28px;
+}
+
+.btn{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    gap:8px;
+    padding:13px 20px;
+    border-radius:10px;
+    font-weight:bold;
+    border:0;
+    cursor:pointer;
+}
+
+.btn-green{
+    background:var(--green);
+    color:white;
+}
+
+.btn-white{
+    background:white;
+    color:var(--blue);
+}
+
+.btn-blue{
+    background:var(--blue);
+    color:white;
+}
+
+.btn-outline{
+    color:white;
+    border:1px solid rgba(255,255,255,.5);
+}
+
+/* HERO CARD */
+
+.hero-card{
+    background:white;
+    color:var(--dark);
+    border-radius:22px;
+    padding:30px;
+    box-shadow:0 25px 55px rgba(0,0,0,.22);
+}
+
+.hero-card-icon{
+    font-size:55px;
+}
+
+.hero-card h3{
+    color:var(--blue);
+    font-size:25px;
+    margin:8px 0;
+}
+
+.hero-card p{
+    color:var(--gray);
+    font-size:15px;
+}
+
+.quick{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:10px;
+    margin-top:20px;
+}
+
+.quick div{
+    background:var(--light);
+    padding:12px 5px;
+    border-radius:10px;
+    text-align:center;
+    font-size:13px;
+    font-weight:bold;
+}
+
+/* SECTION */
+
+section{
+    padding:75px 0;
+}
+
+.section-title{
+    text-align:center;
+    max-width:720px;
+    margin:0 auto 40px;
+}
+
+.section-title h2{
+    color:var(--blue);
+    font-size:35px;
+    margin-bottom:8px;
+}
+
+.section-title p{
+    color:var(--gray);
+}
+
+/* SERVICES */
+
+.services{
+    background:var(--light);
+}
+
+.service-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+}
+
+.card{
+    background:white;
+    border:1px solid #edf1f5;
+    border-radius:17px;
+    padding:24px;
+    box-shadow:var(--shadow);
+    transition:.25s;
+}
+
+.card:hover{
+    transform:translateY(-7px);
+    box-shadow:0 18px 40px rgba(8,43,89,.17);
+}
+
+.service-icon{
+    font-size:36px;
+}
+
+.card h3{
+    color:var(--blue);
+    margin:10px 0 6px;
+}
+
+.card p{
+    color:var(--gray);
+    font-size:14px;
+}
+
+/* SEARCH */
+
+.search-box{
+    max-width:500px;
+    margin:0 auto 30px;
+    display:flex;
+}
+
+.search-box input{
+    width:100%;
+    padding:14px;
+    border:1px solid #d9e1ea;
+    border-radius:10px 0 0 10px;
+    font-size:15px;
+}
+
+.search-box button{
+    border:0;
+    background:var(--blue);
+    color:white;
+    padding:0 20px;
+    border-radius:0 10px 10px 0;
+}
+
+/* UPDATES */
+
+.updates{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.update{
+    border-left:5px solid var(--green);
+}
+
+.tag{
+    display:inline-block;
+    padding:5px 10px;
+    border-radius:20px;
+    background:#e8f8f1;
+    color:#087443;
+    font-size:12px;
+    font-weight:bold;
+}
+
+/* ABOUT */
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:45px;
+    align-items:center;
+}
+
+.checks{
+    list-style:none;
+    margin-top:20px;
+}
+
+.checks li{
+    margin:12px 0;
+    font-weight:600;
+}
+
+.checks li::before{
+    content:"✓";
+    color:var(--green);
+    margin-right:10px;
+    font-weight:bold;
+}
+
+.about-box{
+    background:linear-gradient(145deg,#edf6ff,#fff);
+    border-radius:22px;
+    padding:35px;
+}
+
+/* CONTACT */
+
+.contact{
+    background:var(--light);
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+}
+
+.contact-card{
+    background:white;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:var(--shadow);
+}
+
+.contact-item{
+    display:flex;
+    gap:15px;
+    margin:20px 0;
+}
+
+.contact-icon{
+    font-size:25px;
+}
+
+.contact-item strong{
+    color:var(--blue);
+}
+
+.map-box{
+    min-height:220px;
+    background:#e1edf7;
+    border-radius:17px;
+    display:grid;
+    place-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+form{
+    display:grid;
+    gap:14px;
+}
+
+input,
+textarea,
+select{
+    width:100%;
+    padding:13px 14px;
+    border:1px solid #d8e0e8;
+    border-radius:9px;
+    font:inherit;
+}
+
+textarea{
+    min-height:120px;
+    resize:vertical;
+}
+
+/* FOOTER */
+
+footer{
+    background:#061d3b;
+    color:#d9e6f5;
+    padding:40px 0;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    gap:30px;
+}
+
+footer h3{
+    color:white;
+    margin-bottom:10px;
+}
+
+footer a{
+    display:block;
+    margin:7px 0;
+}
+
+.copyright{
+    border-top:1px solid rgba(255,255,255,.15);
+    text-align:center;
+    margin-top:25px;
+    padding-top:18px;
+    font-size:13px;
+}
+
+/* MOBILE BAR */
+
+.mobile-bar{
+    display:none;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+    .hero-grid,
+    .about-grid,
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .service-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .updates{
+        grid-template-columns:1fr;
+    }
+
+    nav{
+        display:none;
+    }
+
+    nav.active{
+        display:block;
+        position:absolute;
+        top:76px;
+        left:0;
+        width:100%;
+        background:white;
+        padding:20px;
+        box-shadow:0 10px 20px rgba(0,0,0,.1);
+    }
+
+    nav.active ul{
+        flex-direction:column;
+    }
+
+    .menu{
+        display:block;
+    }
+}
+
+@media(max-width:600px){
+
+    .topbar .container{
+        justify-content:center;
+    }
+
+    .topbar span:last-child{
+        display:none;
+    }
+
+    .hero{
+        padding:60px 0;
+    }
+
+    .hero h1{
+        font-size:40px;
+    }
+
+    .service-grid{
+        grid-template-columns:1fr;
+    }
+
+    .quick{
+        grid-template-columns:1fr;
+    }
+
+    section{
+        padding:55px 0;
+    }
+
+    .mobile-bar{
+        display:flex;
+        position:fixed;
+        bottom:0;
+        left:0;
+        right:0;
+        z-index:2000;
+        background:white;
+        box-shadow:0 -5px 20px rgba(0,0,0,.15);
+    }
+
+    .mobile-bar a{
+        flex:1;
+        padding:11px 4px;
+        text-align:center;
+        font-size:12px;
+        font-weight:bold;
+    }
+
+    .mobile-bar a:nth-child(2){
+        background:var(--green);
+        color:white;
+    }
+
+    .mobile-bar a:nth-child(3){
+        background:var(--blue);
+        color:white;
+    }
+
+    footer{
+        padding-bottom:75px;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+    <div class="container">
+        <span>📍 Sai Computer, Kurhe</span>
+        <span>💻 CSC Center • Digital Seva</span>
+    </div>
+</div>
+
+<!-- HEADER -->
+<header>
+<div class="container nav">
+
+    <a href="#home" class="logo">
+        <div class="logo-icon">S</div>
+
+        <div>
+            <h2>SAI COMPUTER</h2>
+            <small>KURHE • CSC CENTER</small>
+        </div>
+    </a>
+
+    <button class="menu" onclick="toggleMenu()">☰</button>
+
+    <nav id="navigation">
+        <ul>
+            <li><a href="#home">मुख्यपृष्ठ</a></li>
+            <li><a href="#services">सेवा</a></li>
+            <li><a href="#updates">नवीन अपडेट</a></li>
+            <li><a href="#about">आमच्याबद्दल</a></li>
+            <li><a href="#contact">संपर्क</a></li>
+        </ul>
+    </nav>
+
+</div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+
+<div class="container hero-grid">
+
+<div>
+
+<span class="badge">
+🏛️ CSC CENTER • DIGITAL SEVA
+</span>
+
+<h1>
+आपल्या सर्व
+<span>ऑनलाइन सेवांसाठी</span>
+एकाच ठिकाणी
+</h1>
+
+<p>
+Sai Computer, Kurhe येथे ऑनलाइन सरकारी फॉर्म,
+अर्ज भरणे, कागदपत्र अपलोड, शिष्यवृत्ती,
+भरती अर्ज आणि इतर डिजिटल सेवांसाठी सहाय्य.
+</p>
+
+<div class="buttons">
+
+<a href="#services" class="btn btn-green">
+📝 सेवा पहा
+</a>
+
+<a id="heroWhatsapp"
+class="btn btn-white"
+target="_blank">
+💬 WhatsApp
+</a>
+
+</div>
+
+<div class="quick">
+
+<div>📝 Online Forms</div>
+<div>💼 Job Forms</div>
+<div>🎓 Scholarship</div>
+
+</div>
+
+</div>
+
+<div class="hero-card">
+
+<div class="hero-card-icon">💻</div>
+
+<h3>
+Sai Computer, Kurhe
+</h3>
+
+<p>
+स्थानिक ग्राहकांसाठी ऑनलाइन व डिजिटल
+सेवा सहाय्य.
+</p>
+
+<div class="buttons">
+
+<a id="heroCall" class="btn btn-green">
+📞 Call Now
+</a>
+
+<a href="#contact" class="btn btn-blue">
+📍 Contact
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>आमच्या सेवा</h2>
+
+<p>
+आपल्याला आवश्यक असलेल्या ऑनलाइन व डिजिटल
+सेवांसाठी सहाय्य.
+</p>
+
+</div>
+
+<div class="search-box">
+
+<input
+id="serviceSearch"
+type="search"
+placeholder="सेवा शोधा..."
+oninput="searchServices()">
+
+<button onclick="searchServices()">
+Search
+</button>
+
+</div>
+
+<div class="service-grid" id="serviceGrid">
+
+<div class="card service"
+data-search="pan card पॅन कार्ड">
+
+<div class="service-icon">🪪</div>
+
+<h3>PAN Card</h3>
+
+<p>
+PAN संबंधित ऑनलाइन अर्ज व सहाय्य.
+</p>
+
+</div>
+
+
+<div class="card service"
+data-search="voter id मतदार">
+
+<div class="service-icon">🗳️</div>
+
+<h3>Voter Services</h3>
+
+<p>
+मतदार सेवा व ऑनलाइन अर्जासाठी सहाय्य.
+</p>
+
+</div>
+
+
+<div class="card service"
+data-search="certificate प्रमाणपत्र">
+
+<div class="service-icon">📄</div>
+
+<h3>Certificates</h3>
+
+<p>
+उपलब्ध ऑनलाइन प्रमाणपत्र अर्जासाठी सहाय्य.
+</p>
+
+</div>
+
+
+<div class="card service"
+data-search="scholarship शिष्यवृत्ती">
+
+<div class="service-icon">🎓</div>
+
+<h3>Scholarship</h3>
+
+<p>
+शिष्यवृत्ती अर्जासाठी ऑनलाइन सहाय्य.
+</p>
+
+</div>
+
+
+<div class="card service"
+data-search="job recruitment भरती नोकरी">
+
+<div class="service-icon">💼</div>
+
+<h3>Job Applications</h3>
+
+<p>
+भरती व नोकरी अर्ज ऑनलाइन भरण्यास सहाय्य.
+</p>
+
+</div>
+
+
+<div class="card service"
+data-search="exam परीक्षा">
+
+<div class="service-icon">📝</div>
+
+<h3>Exam Forms</h3>
+
+<p>
+परीक्षा अर्ज व ऑनलाइन फॉर्म सहाय्य.
+</p>
+
+</div>
+
+
+<div class="card service"
+data-search="government scheme सरकारी योजना">
+
+<div class="service-icon">🏛️</div>
+
+<h3>Government Schemes</h3>
+
+<p>
+उपलब्ध सरकारी योजनांच्या ऑनलाइन अर्जासाठी सहाय्य.
+</p>
+
+</div>
+
+
+<div class="card service"
+data-search="online form ऑनलाइन फॉर्म">
+
+<div class="service-icon">💻</div>
+
+<h3>Online Forms</h3>
+
+<p>
+विविध ऑनलाइन फॉर्म व document upload सहाय्य.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- UPDATES -->
+<section id="updates">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>📢 नवीन सरकारी फॉर्म & अपडेट्स</h2>
+
+<p>
+नवीन फॉर्म व सरकारी अपडेट्स येथे प्रकाशित करता येतील.
+</p>
+
+</div>
+
+<div class="updates">
+
+<div class="card update">
+
+<span class="tag">भरती</span>
+
+<h3>नवीन भरती अर्ज</h3>
+
+<p>
+अधिकृत जाहिरात तपासून ऑनलाइन अर्जासाठी
+सहाय्य मिळवा.
+</p>
+
+<small>
+अंतिम तारीख: अधिकृत नोटिफिकेशननुसार
+</small>
+
+</div>
+
+
+<div class="card update">
+
+<span class="tag">शिष्यवृत्ती</span>
+
+<h3>Scholarship Application</h3>
+
+<p>
+शिष्यवृत्ती अर्जासाठी आवश्यक कागदपत्रांची
+माहिती मिळवा.
+</p>
+
+<small>
+अधिकृत पोर्टलनुसार प्रक्रिया
+</small>
+
+</div>
+
+
+<div class="card update">
+
+<span class="tag">Online Form</span>
+
+<h3>नवीन ऑनलाइन फॉर्म</h3>
+
+<p>
+उपलब्ध ऑनलाइन अर्जांसाठी Sai Computer शी
+संपर्क करा.
+</p>
+
+<small>
+केंद्राकडून माहिती पुष्टी करावी
+</small>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+
+<div class="container about-grid">
+
+<div>
+
+<div class="section-title"
+style="text-align:left;margin:0">
+
+<h2>Sai Computer बद्दल</h2>
+
+<p>
+Kurhe परिसरातील ग्राहकांना ऑनलाइन व डिजिटल
+सेवांसाठी सोपे सहाय्य देणारे स्थानिक सेवा केंद्र.
+</p>
+
+</div>
+
+<ul class="checks">
+
+<li>ऑनलाइन फॉर्म भरण्यास सहाय्य</li>
+
+<li>Document Upload व PDF काम</li>
+
+<li>सरकारी अर्ज प्रक्रियेसाठी डिजिटल सहाय्य</li>
+
+<li>Job / Exam / Scholarship Forms</li>
+
+</ul>
+
+</div>
+
+
+<div class="about-box">
+
+<h3>
+⚡ सोपी प्रक्रिया
+</h3>
+
+<p style="color:#667085;margin-top:10px">
+
+कागदपत्रे घेऊन केंद्राला भेट द्या
+किंवा WhatsApp वर आधी चौकशी करा.
+
+</p>
+
+<div class="buttons">
+
+<a id="aboutWhatsapp"
+class="btn btn-green"
+target="_blank">
+
+💬 WhatsApp करा
+
+</a>
+
+<a href="#contact"
+class="btn btn-blue">
+
+📞 संपर्क
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>📍 संपर्क करा</h2>
+
+<p>
+Sai Computer, Kurhe येथे भेट द्या
+किंवा ऑनलाइन चौकशी करा.
+</p>
+
+</div>
+
+<div class="contact-grid">
+
+<!-- DETAILS -->
+<div class="contact-card">
+
+<h3>
+SAI COMPUTER, KURHE
+</h3>
+
+<div class="contact-item">
+
+<div class="contact-icon">📍</div>
+
+<div>
+
+<strong>पत्ता</strong>
+
+<br>
+
+Wodhoda Road,
+Near SBI Bank,
+Kurhe
+
+</div>
+
+</div>
+
+
+<div class="contact-item">
+
+<div class="contact-icon">📞</div>
+
+<div>
+
+<strong>मोबाईल</strong>
+
+<br>
+
+<a href="tel:+917030672166">
+
+7030672166
+
+</a>
+
+</div>
+
+</div>
+
+
+<div class="contact-item">
+
+<div class="contact-icon">💬</div>
+
+<div>
+
+<strong>WhatsApp</strong>
+
+<br>
+
+<a
+href="https://wa.me/917030672166"
+target="_blank">
+
+Chat on WhatsApp
+
+</a>
+
+</div>
+
+</div>
+
+
+<div class="contact-item">
+
+<div class="contact-icon">🕐</div>
+
+<div>
+
+<strong>कामकाजाची वेळ</strong>
+
+<br>
+
+केंद्राच्या वेळेनुसार अपडेट करा
+
+</div>
+
+</div>
+
+
+<div class="map-box">
+
+<div>
+
+<div style="font-size:45px">
+📍
+</div>
+
+<strong>
+Google Maps Location
+</strong>
+
+<br>
+
+<small>
+Exact Google Maps link client कडून
+मिळाल्यानंतर येथे जोडता येईल.
+</small>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- FORM -->
+<div class="contact-card">
+
+<h3>
+📝 ऑनलाइन चौकशी
+</h3>
+
+<form onsubmit="sendWhatsApp(event)">
+
+<input
+id="name"
+required
+placeholder="आपले नाव">
+
+<input
+id="mobile"
+required
+type="tel"
+placeholder="मोबाईल नंबर">
+
+<select id="service" required>
+
+<option value="">
+सेवा निवडा
+</option>
+
+<option>
+Online Form
+</option>
+
+<option>
+Job Application
+</option>
+
+<option>
+Scholarship
+</option>
+
+<option>
+PAN Card
+</option>
+
+<option>
+Voter Service
+</option>
+
+<option>
+Certificate
+</option>
+
+<option>
+Other
+</option>
+
+</select>
+
+<textarea
+id="message"
+placeholder="आपली चौकशी">
+</textarea>
+
+<button
+class="btn btn-green"
+type="submit">
+
+💬 WhatsApp वर पाठवा
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+
+<div class="container footer-grid">
+
+<div>
+
+<h3>
+SAI COMPUTER, KURHE
+</h3>
+
+<p>
+CSC Center • Online Government Services
+• Digital Seva
+</p>
+
+</div>
+
+
+<div>
+
+<h3>
+Quick Links
+</h3>
+
+<a href="#services">Services</a>
+
+<a href="#updates">Updates</a>
+
+<a href="#about">About</a>
+
+<a href="#contact">Contact</a>
+
+</div>
+
+
+<div>
+
+<h3>
+Connect
+</h3>
+
+<a
+href="tel:+917030672166">
+
+📞 7030672166
+
+</a>
+
+<a
+href="https://wa.me/917030672166"
+target="_blank">
+
+💬 WhatsApp
+
+</a>
+
+</div>
+
+</div>
+
+
+<div class="container copyright">
+
+© 2026 Sai Computer, Kurhe
+<br>
+
+Website Designed & Developed by
+<strong>AryaTha Digital</strong>
+
+</div>
+
+</footer>
+
+
+<!-- MOBILE BOTTOM BAR -->
+
+<div class="mobile-bar">
+
+<a href="tel:+917030672166">
+📞 Call
+</a>
+
+<a
+href="https://wa.me/917030672166"
+target="_blank">
+
+💬 WhatsApp
+
+</a>
+
+<a href="#contact">
+📍 Contact
+</a>
+
+</div>
+
+
+<script>
+
+/* MOBILE MENU */
+
+function toggleMenu(){
+
+    document
+    .getElementById("navigation")
+    .classList.toggle("active");
+
+}
+
+
+/* SERVICE SEARCH */
+
+function searchServices(){
+
+    const search =
+    document
+    .getElementById("serviceSearch")
+    .value
+    .toLowerCase();
+
+    document
+    .querySelectorAll(".service")
+    .forEach(card => {
+
+        const text =
+        card
+        .dataset
+        .search
+        .toLowerCase();
+
+        card.style.display =
+        text.includes(search)
+        ? "block"
+        : "none";
+
+    });
+
+}
+
+
+/* WHATSAPP */
+
+const whatsappNumber =
+"917030672166";
+
+
+function sendWhatsApp(event){
+
+    event.preventDefault();
+
+    const name =
+    document
+    .getElementById("name")
+    .value;
+
+    const mobile =
+    document
+    .getElementById("mobile")
+    .value;
+
+    const service =
+    document
+    .getElementById("service")
+    .value;
+
+    const message =
+    document
+    .getElementById("message")
+    .value;
+
+
+    const text =
+`नमस्कार Sai Computer, Kurhe.
+
+नाव: ${name}
+मोबाईल: ${mobile}
+सेवा: ${service}
+चौकशी: ${message}`;
+
+
+    const url =
+    "https://wa.me/"
+    + whatsappNumber
+    + "?text="
+    + encodeURIComponent(text);
+
+
+    window.open(url,"_blank");
+
+}
+
+
+/* CLOSE MOBILE MENU */
+
+document
+.querySelectorAll("nav a")
+.forEach(link => {
+
+    link.addEventListener("click",function(){
+
+        document
+        .getElementById("navigation")
+        .classList.remove("active");
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>
